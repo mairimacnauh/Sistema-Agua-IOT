@@ -8,19 +8,19 @@ import { RouterModule, Routes} from '@angular/router';
 import { UsuariosService} from './servicios/usuarios.service';
 import { UsuarioComponent } from './usuario/usuario.component';
 import { LoginComponent } from './login/login.component';
-import {FormsModule} from '@angular/forms';
+import { FormsModule} from '@angular/forms';
 import { PagesComponent } from './pages/pages.component';
 import { RegistroComponent} from './pages/registro/registro.component';
-import {AlertaComponent} from './pages/alerta/alerta.component';
+import { AlertaComponent} from './pages/alerta/alerta.component';
+import { HeaderComponent } from './header/header.component';
+import { EstadisticaComponent } from './pages/estadistica/estadistica.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full'},
-  { path: 'login', component: LoginComponent},
-  { path: 'pages', component: PagesComponent},
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
+  { path: 'login', loadChildren: './login/login.module#LoginModule'},
+  { path: 'pages', loadChildren: './pages/pages.module#PagesModule'},
   { path: 'usuarios', component: UsuariosComponent},
-  { path: 'usuarios/:id', component: UsuarioComponent},
-  {path: 'registrocomp', component: RegistroComponent, outlet: 'registro'},
-  {path: 'alertacomp', component: AlertaComponent, outlet: 'registro'}
+  { path: 'usuarios/:id', component: UsuarioComponent}
 ];
 
 @NgModule({
@@ -31,7 +31,9 @@ const routes: Routes = [
     LoginComponent,
     PagesComponent,
     RegistroComponent,
-    AlertaComponent
+    AlertaComponent,
+    HeaderComponent,
+    EstadisticaComponent
   ],
   imports: [
     BrowserModule,

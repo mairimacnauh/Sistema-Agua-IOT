@@ -1,25 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {RegistroComponent} from './registro/registro.component';
-import { Routes, RouterModule} from '@angular/router';
-import { AppRoutingModule} from '../app-routing.module';
-import {AlertaComponent} from './alerta/alerta.component';
+import {PagesComponent} from './pages.component';
+import {HeaderComponent} from '../header/header.component';
 
-const routes: Routes = [
-  {path: 'registrocomp', component: RegistroComponent, outlet: 'registro'},
-  {path: 'alertacomp', component: AlertaComponent, outlet: 'registro'},
-];
 
 @NgModule({
   declarations: [
-    RegistroComponent,
-    AlertaComponent
+    PagesComponent,
+    HeaderComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [RouterModule]
+    PagesComponent
+  ]
 })
-export class AppModule { }
+export class PagesModule { }

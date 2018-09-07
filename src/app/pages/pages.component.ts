@@ -4,7 +4,10 @@ import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-pages',
-  templateUrl: './pages.component.html',
+  template: `
+    <app-header></app-header>
+    <router-outlet></router-outlet>
+  `,
   styleUrls: ['./pages.component.scss']
 })
 export class PagesComponent implements OnInit {
