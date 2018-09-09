@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import {PagesComponent} from './pages.component';
 import {HeaderComponent} from '../header/header.component';
-
+import {PagesRoutingModule} from './pages-routing.module'
 
 @NgModule({
   declarations: [
@@ -9,7 +9,7 @@ import {HeaderComponent} from '../header/header.component';
     HeaderComponent
   ],
   imports: [
-    PagesComponent
+    PagesRoutingModule
   ]
 })
 export class PagesModule { }

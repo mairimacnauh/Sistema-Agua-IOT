@@ -7,12 +7,9 @@ import { UsuariosComponent } from './usuarios/usuarios.component';
 import { RouterModule, Routes} from '@angular/router';
 import { UsuariosService} from './servicios/usuarios.service';
 import { UsuarioComponent } from './usuario/usuario.component';
-import { LoginComponent } from './login/login.component';
 import { FormsModule} from '@angular/forms';
-import { PagesComponent } from './pages/pages.component';
 import { RegistroComponent} from './pages/registro/registro.component';
 import { AlertaComponent} from './pages/alerta/alerta.component';
-import { HeaderComponent } from './header/header.component';
 import { EstadisticaComponent } from './pages/estadistica/estadistica.component';
 
 const routes: Routes = [
@@ -28,11 +25,8 @@ const routes: Routes = [
     AppComponent,
     UsuariosComponent,
     UsuarioComponent,
-    LoginComponent,
-    PagesComponent,
     RegistroComponent,
     AlertaComponent,
-    HeaderComponent,
     EstadisticaComponent
   ],
   imports: [
