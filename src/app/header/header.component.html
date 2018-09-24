@@ -2,22 +2,26 @@
   <div class="">
     <a href="#" class="logo">Logo</a>
     <ul id="nav" class="">
-      <li>
-        <a href="sass.html">Dummy</a></li>
       <li [routerLinkActive]="['active']"
-          [routerLink]="['Registro']">
+          (click)="links(1)">
+        <a>
+          Usuarios
+        </a>
+      </li>
+      <li [routerLinkActive]="['active']"
+          (click)="links(2)">
         <a>
           Registro
         </a>
       </li>
       <li [routerLinkActive]="['active']"
-          [routerLink]="['Estadistica']">
+          (click)="links(3)">
         <a>
           ESTADISTICA
         </a>
       </li>
       <li [routerLinkActive]="['active']"
-          [routerLink]="['Alerta']">
+          (click)="links(4)">
         <a>
           alerta
         </a>
