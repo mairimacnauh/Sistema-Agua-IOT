@@ -1,27 +1,68 @@
-# SistemaSalud
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<h1 align="center">
+  Healthcare System
+</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
 
-## Development server
+This project is a health system to help in the administration of hospitals.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Quick start
 
-## Build
+1.  **Create a new project in Angular.**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    Use the Angular CLI to create a site.
 
-## Running unit tests
+    ```shell
+    # create a Angular project cloned from here
+    git clone https://github.com/MiriamHuanca/Sistema-Salud.git
+    ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1.  **Start dependencies.**
 
-## Running end-to-end tests
+    To install dependencies in the application, on the console type...
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    ```shell
+    cd SistemaSalud/
+    npm install
+    ```
 
-## Further help
+1.  **Start developing.**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    Navigate into your new site’s directory and start it up.
+
+    ```shell
+    ng serve
+    ```
+
+    Your site is now running at `http://localhost:4200`!
+
+1.  **Build**
+
+    Run ng build to build the project. The build artifacts will be stored in the dist/ directory. Use the --prod flag for a production build.
+
+    ```shell
+    ng build --prod
+    ```
+<!--
+## 🎓 Learning
+
+Looking for more guidance? Full documentation for Angular lives [on the website](https://angular.io/). Here are some places to start:
+
+- **To dive straight into code samples, head [to our documentation](https://angular.io/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+
+## 💫 Deploy
+
+[![Deploy with firebase hosting](https://zeit.co/button)](https://cat-project-5972f.web.app/)
+
+## An overview to the project
+
+- The first image is the cat breed listing and search according to race.
+  ![first view](src/assets/image/1SP.png)
+- The second is when you have to new search found.
+  ![second view](src/assets/image/2SD.png)
+- Ther third shows you the image you have chosen randomly.
+  ![third view](src/assets/image/3RD.png)
+
+ AUTO-GENERATED-CONTENT:END -->

@@ -3,25 +3,25 @@
     <a href="#" class="logo">Logo</a>
     <ul id="nav" class="">
       <li [routerLinkActive]="['active']"
-          (click)="links(1)">
+          [routerLink]="'usuarios'">
         <a>
           Usuarios
         </a>
       </li>
       <li [routerLinkActive]="['active']"
-          (click)="links(2)">
+          [routerLink]="'registro'">
         <a>
           Registro
         </a>
       </li>
       <li [routerLinkActive]="['active']"
-          (click)="links(3)">
+          [routerLink]="'estadistica'">
         <a>
           ESTADISTICA
         </a>
       </li>
       <li [routerLinkActive]="['active']"
-          (click)="links(4)">
+          [routerLink]="'alerta'">
         <a>
           alerta
         </a>

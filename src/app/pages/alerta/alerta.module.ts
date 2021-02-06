@@ -2,10 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule} from '@angular/common';
 
 import { AlertaComponent} from './alerta.component';
-import { AlertaRoutingModule} from './alerta-routing.module';
+import {RouterModule, Routes} from '@angular/router';
+
+const routes: Routes = [
+  {path: '', component: AlertaComponent}
+];
 
 @NgModule({
-  imports: [CommonModule, AlertaRoutingModule],
-  exports: [AlertaComponent]
+  declarations: [
+    AlertaComponent
+  ],
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes)
+  ],
 })
 export class AlertaModule { }

@@ -9,7 +9,7 @@ export class EstadisticaComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
 }
