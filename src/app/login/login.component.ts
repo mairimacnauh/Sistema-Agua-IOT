@@ -4,15 +4,35 @@ import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  templateUrl: './login.component.html'
 })
 export class LoginComponent implements OnInit {
+  email: string = '';
+  password: string = '';
+  isEmailValid: boolean = true;
 
   constructor(private  router: Router) {
   }
 
   ngOnInit(): void {
+  }
+
+  validateEmail(): void {
+    const pattern = RegExp(/^[a-zA-Z0-9_.+-]{2,}\@[a-zA-Z0-9_.+-]{2,}\.[a-zA-Z]{2,4}$/);
+    if (pattern.test(this.email)) {
+      this.isEmailValid = true;
+    } else {
+      this.isEmailValid = false;
+    }
+  }
+
+  onKey(event: any, type: string) {
+    if (type === 'email') {
+      this.email = event.target.value;
+      this.validateEmail();
+    } else if (type === 'password') {
+      this.password = event.target.value;
+    }
   }
 
   clicLogin(): void {
@@ -27,14 +47,4 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  /*username: any;
-  password: any;
-  loginUser(e) {
-    e.preventDefault();
-    console.log(e);
-    username = e.target.elements[0].value;
-    password = e.target.elements[1].value;
-    console.log(username, password);
-    return false;
-  }*/
 }

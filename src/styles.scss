@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+#app {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #f7f7f7;
+}
+
+#login-container {
+  min-height: 100vh;
+  min-width: 100vw;
+  color: white;
+  position: relative;
+  background-image: url('https://d500.epimg.net/cincodias/imagenes/2016/03/18/mercados/1458327186_636095_1458327270_noticia_normal.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .notification {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

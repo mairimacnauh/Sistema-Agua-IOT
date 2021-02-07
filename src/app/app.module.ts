@@ -3,7 +3,6 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
 import {RouterModule, Routes} from '@angular/router';
-import {FormsModule} from '@angular/forms';
 import {UsuariosService} from './servicios/usuarios.service';
 import {HttpClientModule} from '@angular/common/http';
 
@@ -19,7 +18,6 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes)
   ],
