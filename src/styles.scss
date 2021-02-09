@@ -6,7 +6,7 @@
 #app {
   min-height: 100vh;
   min-width: 100vw;
-  background-color: #f7f7f7;
+  background-color: #e2e8f0;
 }
 
 #login-container {
@@ -14,10 +14,6 @@
   min-width: 100vw;
   color: white;
   position: relative;
-  background-image: url('https://d500.epimg.net/cincodias/imagenes/2016/03/18/mercados/1458327186_636095_1458327270_noticia_normal.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   .notification {
     position: absolute;
     bottom: 0;

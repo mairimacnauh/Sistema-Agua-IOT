@@ -2,26 +2,26 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
 import {RouterModule, Routes} from '@angular/router';
-import {UsuariosComponent} from './usuarios.component';
+import {SpecialtyComponent} from './specialty.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: UsuariosComponent,
+    component: SpecialtyComponent,
     children: [
-      { path: ':id', loadChildren: () => import('./usuario/usuario.module').then(m => m.UsuarioModule)}
+      { path: ':id', loadChildren: () => import('../patient/patient.module').then(m => m.PatientModule)}
     ]
   }
 ];
 
 @NgModule({
   declarations: [
-    UsuariosComponent
+    SpecialtyComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
   ]
 })
-export class UsuariosModule {
+export class SpecialtyModule {
 }

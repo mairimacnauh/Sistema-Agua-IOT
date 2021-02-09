@@ -1,21 +1,21 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
-import {RegistroComponent} from './registro.component';
 import {RouterModule, Routes} from '@angular/router';
+import {PatientComponent} from './patient.component';
 
 const routes: Routes = [
-  {path: '', component: RegistroComponent}
+  {path: '', component: PatientComponent}
 ];
 
 @NgModule({
   declarations: [
-    RegistroComponent
+    PatientComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
   ]
 })
-export class RegistroModule {
+export class PatientModule {
 }

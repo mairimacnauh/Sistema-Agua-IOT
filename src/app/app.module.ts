@@ -3,12 +3,12 @@ import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
 import {RouterModule, Routes} from '@angular/router';
-import {UsuariosService} from './servicios/usuarios.service';
+import {UsuariosService} from './shared/servicios/usuarios.service';
 import {HttpClientModule} from '@angular/common/http';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full'},
-  { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
+  { path: '', redirectTo: 'auth/login', pathMatch: 'full'},
+  { path: 'auth/login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
   { path: 'pages', loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)}
 ];
 

@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {UsuariosService} from '../../servicios/usuarios.service';
+import {UsuariosService} from '../../shared/servicios/usuarios.service';
 
 @Component({
   selector: 'app-usuarios',
-  templateUrl: './usuarios.component.html'
+  templateUrl: './specialty.component.html'
 })
-export class UsuariosComponent implements OnInit {
+export class SpecialtyComponent implements OnInit {
   usuarios: any[];
 
   constructor(private usuariosService: UsuariosService) {

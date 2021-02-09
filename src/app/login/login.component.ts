@@ -35,15 +35,11 @@ export class LoginComponent implements OnInit {
     }
   }
 
-  clicLogin(): void {
-    this.router.navigate(['pages']);
-  }
-
   login(loginForm: NgForm): void {
     console.log(loginForm.value);
     if (loginForm.value.email === 'admin@admin.com' && loginForm.value.password === '123456') {
       localStorage.setItem('email', loginForm.value.email);
-      this.router.navigate(['/usuarios']);
+      this.router.navigate(['/pages']);
     }
   }
 

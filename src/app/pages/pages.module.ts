@@ -1,20 +1,21 @@
 import {NgModule} from '@angular/core';
 import {PagesComponent} from './pages.component';
-import {HeaderComponent} from '../header/header.component';
 import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
+import {SidebarComponent} from '../core/sidebar/sidebar.component';
+import {NavbarComponent} from '../core/navbar/navbar.component';
 
 const routes: Routes = [
   {
     path: '',
     component: PagesComponent,
     children: [
-      {path: '', redirectTo: 'registro', pathMatch: 'full'},
-      {path: 'registro', loadChildren: () => import('./registro/registro.module').then(m => m.RegistroModule)},
-      {path: 'alerta', loadChildren: () => import('./alerta/alerta.module').then(m => m.AlertaModule)},
-      {path: 'estadistica', loadChildren: () => import('./estadistica/estadistica.module').then(m => m.EstadisticaModule)},
-
-      { path: 'usuarios', loadChildren: () => import('./usuarios/usuarios.module').then(m => m.UsuariosModule)}
+      {path: '', redirectTo: 'hospital', pathMatch: 'full'},
+      {path: 'hospital', loadChildren: () => import('./hospital/hospital.module').then(m => m.HospitalModule)},
+      {path: 'doctor', loadChildren: () => import('./doctor/doctor.module').then(m => m.DoctorModule)},
+      {path: 'patient', loadChildren: () => import('./patient/patient.module').then(m => m.PatientModule)},
+      {path: 'specialty', loadChildren: () => import('./specialty/specialty.module').then(m => m.SpecialtyModule)},
+      {path: 'note', loadChildren: () => import('./note/note.module').then(m => m.NoteModule)},
     ]
   }
 ];
@@ -22,7 +23,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     PagesComponent,
-    HeaderComponent
+    SidebarComponent,
+    NavbarComponent,
   ],
   imports: [
     CommonModule,

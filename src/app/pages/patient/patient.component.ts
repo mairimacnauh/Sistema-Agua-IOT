@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute} from '@angular/router';
-import { UsuariosService} from '../../../servicios/usuarios.service';
+import { UsuariosService} from '../../shared/servicios/usuarios.service';
 
 @Component({
   selector: 'app-usuario',
-  templateUrl: './usuario.component.html'
+  templateUrl: './patient.component.html'
 })
-export class UsuarioComponent implements OnInit {
+export class PatientComponent implements OnInit {
   usuario: any;
   constructor(private route: ActivatedRoute, private  usuariosService: UsuariosService) { }
 

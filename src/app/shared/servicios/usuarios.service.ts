@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
@@ -17,11 +17,15 @@ export class UsuariosService {
     {id: 9, nombre: 'Lizeth', apellido: 'Velasquez'},
     {id: 10, nombre: 'Ricardo', apellido: 'Pari'}
   ];
-  constructor() { }
+
+  constructor() {
+  }
+
   getUsuarios() {
     return this.usuarios;
   }
+
   getUsuario(id: number) {
-    return this.getUsuarios().find( usuario => usuario.id === id);
+    return this.getUsuarios().find(usuario => usuario.id === id);
   }
 }
