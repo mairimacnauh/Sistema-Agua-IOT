@@ -1,6 +1,8 @@
+
 <div id="login-container" class="flex container mx-auto items-center justify-center">
-  <div class="max-w-xs w-full">
-    <div class="bg-white border rounded py-10 px-4 sm:px-6 lg:px-8">
+  <div class="cap-login"></div>
+  <div class="max-w-xs w-full xl:z-10">
+    <div class="bg-white shadow-md border rounded py-10 px-4 sm:px-6 lg:px-8">
       <div>
         <img class="mx-auto h-20 w-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUDCjWtAy-X0coYvn6NUzPnqi8HMwANffJpg&usqp=CAU" alt="Logo">
       </div>
@@ -11,7 +13,7 @@
           <div>
             <label for="email-address" class="sr-only">Email address</label>
             <input class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
-                   placeholder="Email address"
+                   placeholder="Email address*"
                    id="email-address"
                    name="email"
                    ngModel
@@ -21,7 +23,8 @@
           </div>
           <div>
             <label for="password" class="sr-only">Password</label>
-            <input class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password"
+            <input class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                   placeholder="Password*"
                    id="password"
                    name="password"
                    ngModel
